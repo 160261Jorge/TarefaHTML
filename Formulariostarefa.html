@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario 3</title>
+    <style>
+        #email:valid{background: #006600; color: #fff}
+        #email:invalid{background: #990000; color: #fff}
+    </style>
+</head>
+<body>
+    <br>
+   <center> <h1>Escola  Virtual</h1>
+
+    <p></p>
+
+    <font size="5">Formulário de Pré-Matricula </font>
+    <hr width="300">
+    <form>
+        <table border="2" width="33%">
+            <tbody>
+                <tr>
+                    <td align="left">
+                        <b>Dados pessoais: </b><br>        
+                            
+                            <center>
+                            <label>Nome: <input type="text" name="nome" size="40" required></label>
+                            <p></p>
+                            <label>Nascimento (dd/mm/aaaa): <input type="text" name="nascimento" size="5">/</label><input type="text" name="nascimento" size="5">/</label><input type="text" name="nascimento" size="5"></label>
+                            <p></p>
+                            <label>Nome da Mãe: <input type="text" name="mae" size="40"></label>
+                            <p></p>
+                            <label>Nome do Pai: <input type="text" name="pai" size="40"></label>
+                            <p></p>
+                            <label>Telefone: DDD (<input type="text" name="ddd" size="3">) Tel: <input type="text" name="tel" size="15">Ramal: <input type="text" name="ramal" size="10"></label>
+                            <p></p>
+                            <label>Email: <input id="email" type="email" name="email" size="40" required></label>
+                            </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table  width="33%">       
+            <tbody align="left">
+                <tr>
+                    <left><b>Informações de matricula:</b><br></left>
+                    <td>
+                    Serie<br>                       
+                     <select name="serie">
+                        <option value="Pré-Escolar">Pré-Escolar</option>
+                         <option value="Fundamental">Fundamental</option>
+                         <option value="Ensino médio">Ensino Médio</option>
+                         <option value="Superior">Superior</option>
+                    </select >
+                        
+                    </td>
+                    <td >
+                        <label>
+                        Turno: <br>
+                        <input type="radio" value="Manha" name="manha">Manha<br>
+                        <input type="radio" value="tarde" name="manha">Tarde<br>
+                        </label>
+                        
+                    </td>
+                    <td >
+                            <label>
+                            Atividades Extracurriculares:  <br>
+                            <input type="checkbox" value="Manha" name="Informatica">Informatica<br>
+                            <input type="checkbox" value="tarde" name="Musica">Musica<br>
+                            <input type="checkbox" value="tarde" name="Balet">Balet<br>
+                            <input type="checkbox" value="tarde" name="Pintura">Pintura<br>
+                            <input type="checkbox" value="tarde" name="Futebol">Futebol<br>
+
+                            </label>
+                            
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>    
+</body>
+</html
