@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Estilizando Formularios com css</title>
+    <link rel="stylesheet" href="tarefaformulario.css">
+</head>
+<body>
+    <form name="meuForm" method="post">
+        <div class="box">
+            <h1> Formulario de Contato</h1>
+
+            <label>
+                <span>Nome completo:</span>
+                    <input type="text" class="input text" name="nome">
+            </label>
+
+            <label>
+                    <span>Email:</span>
+                    <input type="text" class="input text" name="assunto">
+            </label>
+
+            <label>
+                    <span>Mensagem:</span>
+                    <textarea class="message" name="feedback"></textarea>
+                    <input type="button" class="button" value="enviar">
+            </label>
+        </div>
+    </form>
+</body>
+</html>

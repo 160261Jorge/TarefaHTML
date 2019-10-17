@@ -1,0 +1,34 @@
+body{
+    background-color: bisque;
+}
+
+h3{
+    margin: 15px 15px 15px 15px;
+}
+ul.nada{
+    list-style-type: none;
+    color: blueviolet;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+ul.bolinha{
+    list-style-type: disc;
+    color: brown;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+ul.quadrado{
+    list-style-type: square;
+    color: cadetblue;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
+
+ul.circulo{
+    list-style-type: circle;
+    color: cornflowerblue;
+    font-size: 20px;
+    margin: 20px 20px 20px 20px;
+}
