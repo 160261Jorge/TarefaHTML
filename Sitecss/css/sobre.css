@@ -30,3 +30,30 @@ p{
     padding: 0 45px;
     text-indent: 15px;
 }
+/*Acerte tambem a renderização das figuras, Fundo cinza , borda azul, legenda em italico com font-style e alinhe a imagem e a legenda no centro com text-align.*/
+
+figure{
+    background-color: #f2eded;
+    border: 1px solid #ccc; /* algumas possibilidase: dashed, dotted, double, groove e outros*/
+    text-align: center; /*text-align tbm pode ser left, right e justify */
+    padding: 15px;
+    margin: 30px;
+}
+#centro-distribuicao {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+}
+figcaption{
+    font-style: italic;
+    margin-top: 10px;
+}
+#rodape img{
+    margin-right: 30px;
+    vertical-align: middle;
+    width: 94px;
+}
+#familia-pelho {
+    float: right;
+    margin: 0 0 10px 10px;
+}
