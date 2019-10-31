@@ -1,0 +1,337 @@
+body
+{
+    color:	#333333;
+    font-family: "Lucida Sans Unicode",	"Lucida	Grande", sans-serif;
+} 
+
+/*colocando no centro da pagina*/
+.container
+{
+    margin: 0 auto;
+    width: 940px;
+}
+
+/*Posicione o menu à direita e embaixo no header. Use position: absolute para isso. E não
+esqueça: se queremos posicioná-lo absolutamente com relação ao cabeçalho, 
+o cabeçalho precisa estar com position: relative.*/
+header{
+    position: relative;
+}
+
+/*A sacola também deve estar posicionada a direita e no topo. Use position , top e right para
+conseguir esse comportamento.*/
+
+.sacola	{	
+    background-image:	url(../img/sacola.png);	
+    background-repeat:	no-repeat;	
+    background-position: top right;
+    font-size:	14px;			
+    padding-right:	35px;	
+    padding-top: 8px;		
+    width:	140px;	
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.menu-opcoes
+{
+    position:absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.menu-opcoes ul	
+{			
+    font-size:	15px;	
+}
+
+/*Transformar nosso menu em vertical e ajustar espaçamentos básicos.*/
+.menu-opcoes ul li{
+    display: inline;
+    margin-left: 20px;
+}
+
+.menu-opcoes a
+{				
+    color:	#003366;	
+} 
+
+/*Fundo cinza nas caixas de busca e no menu de departamentos. Além disso, 
+o texto deve estar em negrito e apresentado em maiúsculas.
+Foram aplicadas algumas regras de margens e de tamanhos*/
+
+.busca,
+.menu-departamentos {
+    background-color: #DCDCDC;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 230px;
+    
+}
+
+.busca h2,
+.busca form,
+.menu-departamentos h2 {
+    margin: 10px;
+}
+
+.menu-departamentos li {
+    background-color: white;
+    margin-bottom: 1px;
+    padding: 5px 10px;
+}
+
+.menu-departamentos a {
+    color: #333333;
+    text-decoration: none;
+}
+
+.busca input {
+	vertical-align: middle;
+}
+/*o tamanho do campo de texto para melhor encaixar no design e use seletores de atributo do CSS*/
+.busca input[type=search] {
+    width: 170px;
+}
+
+/*Para que o menu de departamentos e a busca estejam à esquerda na página, vamos flutuar esses
+elementos com float:left.
+Mas só isso fará com que o menu fique a direita da busca (faça o teste).
+Precisamos indicar ao menudepartamentos que ele deve flutuar à esquerda mas
+não ao lado de outro elemento. 
+Conseguimos isso com a propriedade clear */
+
+.busca,
+.menu-departamentos {
+    float: left;
+}
+
+.menu-departamentos {
+    margin-top: 10px;
+    padding-bottom: 10px;
+    clear: left;
+}
+
+ /*Acerte as margens e posicionamentos no menu lateral e no topo*/
+.destaque {
+    margin-top: 10px;
+}
+
+.destaque img {
+	margin-left: 10px;
+}
+
+.painel {
+	margin: 10px 0;
+	padding: 10px;
+	width: 445px;
+}
+
+.novidades {
+	float: left;
+	background-color: #f5dcdc;
+}
+
+.mais-vendidos {
+	float: right;
+	background-color: #dcdcf5;
+}
+
+.painel li {
+	display: inline-block;
+	vertical-align: top;
+	width: 140px;
+
+	margin: 2px;
+	padding-bottom: 10px;
+}
+
+.painel h2 {
+	font-size: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	margin-bottom: 10px;
+}
+
+.painel a {
+	color: #333;
+	font-size: 14px;
+	text-align: center;
+	text-decoration: none;
+}
+
+footer {
+	background-image: url(../img/fundo-rodape.png);
+	clear: both;
+	padding: 20px 0;
+}
+
+footer .container {
+	position: relative;
+}
+
+.social {
+	position: absolute;
+	top: 12px;
+	right: 0;
+}
+
+.social li {
+	display: inline-block;
+	margin-left: 25px;
+}
+
+.social li a {
+	height: 32px;
+	width: 32px;
+
+	display: block;
+	text-indent: -99999px;  
+}
+
+.social a[href*="facebook"] {
+	background-image: url(../img/facebook.png);
+}
+
+.social a[href*="twitter"] {
+	background-image: url(../img/twitter.png);
+}
+
+.social a[href*="plus"] {
+	background-image: url(../img/googleplus.png);
+}
+
+.menu-departamentos li li a:before {
+	content: '\272A';
+	padding-right: 3px;
+}
+
+.painel h2:before {
+	content: '\2756';
+	padding-right: 5px;
+	opacity: 0.4;
+}
+
+.novidades {
+	background-color: #f5dcdc;
+	background: linear-gradient(#f5dcdc, #bebef4);
+}
+
+.mais-vendidos {
+	background: #dcdcf5;
+	background: linear-gradient(#dcdcf5, #f4bebe);
+}
+
+.painel button {
+	display: none;
+}
+
+.painel-compacto li:nth-child(n+7) {
+	display: none;
+}
+
+.painel-compacto button {
+	display: block;
+}
+
+.painel button {
+	/* posicionamento */
+	float: right;
+	margin-right: 10px;
+	padding: 10px;
+
+	/* estilo */
+	background-color: #333;
+	border: 0;
+	border-radius: 4px;
+	box-shadow: 1px 1px 3px rgba(30,30,30,0.5);
+	color: white;
+	font-size: 1em;
+	text-decoration: none;
+	text-shadow: 1px 0 1px black;
+
+	/* animação*/
+	transition: 0.3s;
+}
+
+.painel button:hover {
+	background-color: #393939;
+	box-shadow: 1px 0 20px rgba(200,200,120,0.9);
+}
+
+.painel button {
+	color: white;
+	position: relative;
+	margin-bottom: 10px;
+}
+
+.painel button:after {
+	/* elemento vazio */
+	content: '';
+	display: block;
+	height: 0;
+	width: 0;
+
+	/* triangulo */
+	border-top: 10px solid #333;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+
+	/* posicionamento */
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	margin-left: -5px;
+
+	/* animação */
+	transition: 0.3s;
+}
+
+.painel button:hover:after {
+	border-top-color: #393939;
+}
+
+
+/*Elementos em bloco são aqueles que ocupam toda a largura do	documento, 
+tanto antes	 quanto depois deles. Um bom exemplo de elemento em bloco é a tag <h1>. 
+Note que não há nenhum outro elemento à esquerda ou à direita do nosso nome da loja, 
+apesar da expressão "Mirror Fashion” não ocupar toda a largura do documento. 
+Entre os elementos em bloco, podemos destacar as tags de heading <h1> a <h6>, 
+os parágrafos <p> e divisões <div>.
+Elementos em linha são aqueles que ocupam somente o espaço necessário para que seu próprio conteúdo 
+seja exibido, permitindo que outros elementos em linha possam ser renderizados 
+logo na sequência, seja	antes ou depois, exibindo diversos elementos nessa mesma linha. 
+Entre os elementos em linha, podemos destacar as tags de âncora <a>, 
+as tags de ênfase <small>, <strong> e <em> e a tag de marcação de atributos <span>.
+Pode ser interessante alterarmos esse padrão de acordo com nossa necessidade, por isso existe a
+propriedade	display no CSS,	que	permite	definir	qual estratégia	de exibição	o elemento utilizará.
+Por	exemplo, o elemento <li> de uma	<ul> tem por padrão	o valor	block para a propriedade display.	
+Se	quisermos os elementos na horizontal, basta	alterarmos a propriedade display da <li> para inline*/
+
+/*Resumo de postion
+static
+Sua posição é dada automaticamente pelo fluxo da página: por padrão ele é renderizado logo após seus irmãos
+Não aceita um posicionamento manual (left, right, top, bottom)
+O tamanho do seu elemento pai leva em conta o tamanho do elemento static
+
+relative
+Por padrão, o elemento será renderizado da mesma maneira que o static
+Aceita posicionamento manual
+O tamanho do seu elemento pai leva em conta o tamanho do elemento relative, porém sem levar em conta seu posicionamento. O pai não sofreria alterações mesmo se o elemento fosse static
+
+fixed
+Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é obrigatória
+O elemento será renderizado na página na posição indicada. Mesmo que ocorra uma rolagem, o elemento permanecerá no mesmo lugar
+Seu tamanho não conta para calcular o tamanho do elemento pai, é como se não fosse elemento filho
+
+absolute
+Uma configuração de posicionamento vertical (left ou right) e uma horizontal (top ou bottom) é obrigatória
+O elemento será renderizado na posição indicada, porém relativa ao primeiro elemento pai cujo position seja diferente de static ou, se não existir este pai, relativa à página
+Seu tamanho não conta para calcular o tamanho do elemento pai*/
+
+/*Posicione o menu à direita e embaixo no header. Use position: absolute para isso. E não
+esqueça: se queremos posicioná-lo absolutamente com relação ao cabeçalho, o cabeçalho precisa estar
+com position: relative .*/
+
