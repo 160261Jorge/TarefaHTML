@@ -1,0 +1,57 @@
+
+#aprendendo {
+    font-size: 35px;
+    background: darkkhaki;
+    padding: 10px;
+    text-align: right;
+}
+
+#por {
+    font-size: 23px;
+    background: darkseagreen;
+    text-align: right;
+    padding: 10px;
+}
+
+h1{
+    margin-left: 300px;
+}
+
+h2{
+    margin-left: 300px;
+}
+
+#apostila{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+ul{
+    padding-left: 350px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#html{
+    margin-left: 300px;
+    margin-right: 300px;
+    font-size: 20px;
+    line-height: 2;
+}
+
+#rodape{
+    font-size: 20px;
+    
+    text-align: center;
+    padding: 20px;
+    background: darkgreen;
+}
+.links{
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    background: cyan;
+    word-spacing: 50px;
+}

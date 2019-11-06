@@ -1,7 +1,18 @@
-#texto {
-    width: 800px;
-    margin: 0 auto;
-    background-color: aliceblue;
+
+body {
+    margin: 10px;
+    padding-top: 90px;
+    background-color: rgb(246, 247, 250);
+    font-style: verdana;
+    text-align: center;
+}
+
+#text {
+    vertical-align: middle;
+    width: 400px;
+    margin: auto;
+    background-color: white;
     border: 1px solid #333;
-    padding: 10px;
+    color: red;
+    font-size: 12px;
 }
