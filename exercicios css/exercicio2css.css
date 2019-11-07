@@ -1,4 +1,8 @@
-
+body{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
 #aprendendo {
     font-size: 35px;
     background: darkkhaki;
