@@ -1,0 +1,115 @@
+.cores label:after {
+    content: '';
+    display: block;
+
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+}
+
+label[for=verde]:after{
+    background-color: #FF6666;
+}
+
+label[for=rosa]:after{
+    background-color: #FF6666;
+}
+
+label[for=azul]:after{
+    background-color: #6666FF;
+}
+.cores input:checked + label:after{
+    border: 6px solid rgba(0,0,0,0.3);
+}
+
+.cores label:after{
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    top: 30px;
+}
+/*escondendo as bolinhas padrão no input*/
+.cores input[type=radio] {
+    display: none;
+}
+
+/*Para fechar a funcionalidade de escolha das cores, falta exibir apenas a imagem atualmente
+selecionada. Outra forma de falar isso é que devemos esconder as imagens dos radios não selecionadas.*/
+
+.cores input:not(:checked) + label img {
+    display: none;
+}
+/* Com a troca  de imagns funcionando,vamos implementar o posicionamento correto das bolinhas lado a lado.
+para isso, use position: absolute ja que seus tamanhos são conhecidos*/
+.cores {
+    position: relative;
+    padding-top: 80px;
+}
+
+/*as bolinhas ficaram sobrepostas na esquerda. Para corrigir, basta colocar uma coordenada left
+diferente para cada uma:*/
+label[for=verde]:after {
+    left: 0;
+}
+label[for=rosa]:after {
+    left: 60px;
+}
+label[for=azul]:after {
+    left: 120px;
+}
+
+/*um ponto importante de uma solução responsiva é que as imagens se adaptem ao tamanho da tela.
+Ás vezes, usamos imagens maiores e, quando a tela é pequena, elemento pai. Uma forma de corrigir esse problema é
+garantir que ela nunca passe o tamanho do pai com maxwidth*/
+
+.cores label img {
+    display: block;
+    max-width: 100%;
+}
+
+/* Primeiro, detalhes de tipografia e espaçamento para toda página de produtos*/
+.produto {
+    color: #333;
+    line-height: 1.3;
+    margin-top: 2em;
+}
+/*O nome do produto e seu preço tambem ganham estilo*/
+.produto h1{
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.produto p {
+    font-size: 1.2em;
+    font-style: italic;
+    margin-bottom: 1em;
+}
+/*O <legend> ganha um destaque*/
+.produto legend {
+    display: block;
+    font: bold 0.9em/2.5 arial;
+    text-transform:uppercase;
+}
+/*E por fim, o botão de comprar deve ficar em evidência*/
+.comprar{
+    background:#91bd3c;
+    border:none;
+    color: #333;
+
+    font-size: 1.4em;
+    text-transform: uppercase;
+
+    box-shadow: 0 1px 3px #777;
+
+    display: block;
+    padding: 0.5em 1em;
+    margin: 1em 0;
+}
+/*Quando selecionamos a bolinha, uma borda escura aparece.
+Use transition para fazer
+a borda aparecer suavemente.
+adicione o seletor no inicio de produto.css*/
+
+.cores label:hover:after {
+    border: 6px solid rgba(0,0,0,0.1);
+}
