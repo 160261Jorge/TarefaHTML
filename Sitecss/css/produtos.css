@@ -113,3 +113,111 @@ adicione o seletor no inicio de produto.css*/
 .cores label:hover:after {
     border: 6px solid rgba(0,0,0,0.1);
 }
+
+output{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 1px solid black;
+    padding: 10px;
+
+}
+
+@media(min-width: 630px){
+    .produto{
+        position: relative;
+        padding-left: 40%;
+        /*deixo 40 % de espaço em branco na esquerda para foto ocupar */
+     
+    }
+    .cores{
+        /* eu era relative antes, reinicio para static para 
+        evitar que a foto se posicione com relação a mim */
+        position: static;
+
+        /* Reinicio meu padding-top que tinha antes e não preciso mais */
+        padding: 0;
+
+    }
+    .cores label img {
+        position: absolute;
+        top: 0;
+        left: 0;
+
+    }
+    .cores label:after{
+        position:static;
+        float: left;
+
+    }
+    .cores label img{
+        max-width: 35%;
+        max-height: 100%;
+
+    }
+    .produto {
+        font-size: 1.2em;
+
+    }
+    .cores label:after {
+        margin-left: 10px;
+
+    }
+    fieldset {
+        display: inline-block;
+        vertical-align: top;
+
+        margin: 1em 0;
+        min-width: 200px;
+        width: 45%;
+
+    }
+}
+.detalhes{
+    padding: 2em 0;
+}
+.detalhes h2 {
+    font-size: 1.5em;
+    line-height: 2;
+
+}
+.detalhes p{
+    margin: 1em 0;
+    font-size: 1em;
+    line-height: 1.5;
+    max-width: 36em;
+
+}
+@media (min-width: 500px){
+    .detalhes {
+        font-size: 1.2em;
+
+    }
+}
+table{
+    border-spacing: 0.2em;
+    border-collapse:separate
+
+}
+thead{
+    background-color: #999;
+
+}
+thead th{
+    font-weight: bold;
+    padding: 0.3em 1em;
+    text-align: center;
+
+}
+td{
+    padding: 0.3em;
+
+}
+tr:nth-last-child(2n){
+    background-color: #ccc;
+
+}
+tr:first-child{
+    font-style: italic;
+    
+}
